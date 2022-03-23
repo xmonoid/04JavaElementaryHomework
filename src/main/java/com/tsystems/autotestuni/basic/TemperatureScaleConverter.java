@@ -14,7 +14,7 @@ public final class TemperatureScaleConverter {
      * @return temperature in Celsius
      */
     public static double fahrenheitToCelsius(double fahrenheit) {
-        return Double.NaN; // FIXME: Implement code here
+        return (fahrenheit - 32.0) * 5.0 / 9.0;
     }
 
     /**
@@ -24,6 +24,6 @@ public final class TemperatureScaleConverter {
      * @return temperature in Fahrenheit
      */
     public static double celsiusToFahrenheit(double celsius) {
-        return Double.NaN; // FIXME: Implement code here
+        return celsius * 9.0 / 5.0 + 32.0;
     }
 }

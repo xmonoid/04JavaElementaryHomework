@@ -11,7 +11,13 @@ public class RegularGeometricShapes {
      * @return the area of the hexagon
      */
     public static double hexagonArea(double length) {
-        return Double.NEGATIVE_INFINITY; // FIXME: Implement code here
+        if (length < 0.0) {
+            return Double.NaN;
+        }
+        if (length == 0.0) {
+            return 0.0;
+        }
+        return 3 * Math.sqrt(3) / 2.0 * Math.pow(length, 2);
     }
 
     /**
@@ -25,6 +31,12 @@ public class RegularGeometricShapes {
      * @return the area of the polygon
      */
     public static double polygonArea(int sides, double length) {
-        return Double.NEGATIVE_INFINITY; // FIXME: Implement code here
+        if (sides < 3 || length < 0.0) {
+            return Double.NaN;
+        }
+        if (length == 0.0) {
+            return 0.0;
+        }
+        return 1.0/4.0 * sides * Math.pow(length, 2) / Math.tan(Math.PI / sides);
     }
 }

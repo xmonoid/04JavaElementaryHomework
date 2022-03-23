@@ -14,7 +14,7 @@ public class CharacterArithmetic {
      * @return {@code true} if the symbol is a digit, {@code false} otherwise
      */
     public static boolean checkSymbolIsDigit(char symbol) {
-        return false; // FIXME: Implement code here
+        return symbol >= '0' && symbol <= '9';
     }
 
     /**
@@ -24,6 +24,6 @@ public class CharacterArithmetic {
      * @return {@code true} if the symbol is a latin letter, {@code false} otherwise
      */
     public static boolean checkSymbolIsLatinLetter(char symbol) {
-        return false; // FIXME: Implement code here
+        return symbol >= 'A' && symbol<= 'Z' || symbol >= 'a' && symbol <= 'z';
     }
 }

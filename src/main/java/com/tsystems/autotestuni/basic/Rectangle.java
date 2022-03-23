@@ -16,7 +16,7 @@ public class Rectangle {
      * @return rectangle's perimeter
      */
     public static double perimeter(double length, double width) {
-        return Double.NaN; // FIXME: Implement code here
+        return (length + width) * 2;
     }
 
     /**
@@ -28,6 +28,6 @@ public class Rectangle {
      * @return rectangle's area
      */
     public static double area(double length, double width) {
-        return Double.NaN; // FIXME: Implement code here
+        return length * width;
     }
 }

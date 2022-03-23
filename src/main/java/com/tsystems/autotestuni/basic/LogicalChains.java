@@ -14,7 +14,7 @@ public final class LogicalChains {
      * @return {@code true} if the input number belongs to the segment, {@code false} otherwise
      */
     public static boolean between5and50(int number) {
-        return false; // FIXME: Implement code here
+        return (number >= 5) && (number <= 50);
     }
 
     /**
@@ -24,7 +24,7 @@ public final class LogicalChains {
      * @return {@code false} if the input number belongs to the segment, {@code true} otherwise
      */
     public static boolean beyond5and50(int number) {
-        return false; // FIXME: Implement code here
+        return (number < 5) || (number > 50);
     }
 
     /**
@@ -34,6 +34,6 @@ public final class LogicalChains {
      * @return {@code true} if the input number belongs to one of two segments, {@code false} otherwise
      */
     public static boolean betweenOneOfTwoIntervals(int number) {
-        return false; // FIXME: Implement code here
+        return (number >= -50 && number <= -5) || (number >= 5 && number <= 50);
     }
 }
